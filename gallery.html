@@ -1,175 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body class="demo" >
-  
-    <header>
-    <nav class="navbar">
-      <h1 class="logo"> MADARASATUL-TA'ALIMUL QURAN WAS-SUNNAH </h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="scholars.html">Scholars</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="content">
-<h2 class="">Gallery</h2>
-<div class="gallery-grid">
-  <img class="yyy" src="INNERVIEW.jpg" alt="" width="400px" height="250px"><br><br>
-<img class="aaa" src="CLASS3C.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS1C.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="IMG_20250729_170328_059.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="IMG_20250729_170322_670.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="IMG_20250729_170322_670.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="IMG_20250729_170322_670.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS1D.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS4.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS5.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS5%.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="CLASS4.jpg" alt="" width="400px" height="250px">
-<img class="aaa" src="IMG_20250729_170340_057.jpg" alt="" width="400px" height="250px"><br><br>
-<img class="zzz" src="OVERVIEW.jpg" alt="" width="400px" height="250px">
-  
-
-
-<video src=""></video>
-<video src=""></video>
-<video src=""></video>
-
-</div>
-
-  </section>
-<footer>
-    <p>&copy; 2025  MADARASATUL-TA'ALIMIL QURAN WAS-SUNNAH  | All Rights Reserved</p>
-  </footer>
-<style>
-
- .demo{
-
-background-image: url(OVERVIEW.jpg);
-opacity: 2;
-
-
-} 
-
-.yyy{
-
-position: relative;
-right: 5%;
-left: 30%;
-top: 20%;
-border: #004d40 5px solid;
-border-radius: 10%;
-text-align: center;
-}
-
-.zzz
-{
-
-position:relative;
-right: 50%;
-left: 30%;
-border: #004d40 5px solid;
-border-radius: 10%;
-text-align: center;
-}
-
-.aaa{
-border: white 5px solid;
-border-radius: 10%;
-
-}
-
-
-.galler-grid{
-
-  columns: 3pc;
-}
-
-
-
-
-.navbar{
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background:blue /*#004d40*/;
-  padding: 15px 30px;
-}
-
-h2{
-  color: #fff;
-  text-align: center;
-  background-color: #004d40;
-}
-
-
-.navbar-text{
-background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #004d40;
-  padding: 15px 30px;
-
-
-}
-
-
-.navbar .logo {
-  color: #fff;
-  font-size: 24px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-}
-
-.navbar ul li {
-  margin-left: 20px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.navbar ul li a:hover {
-  color: #ffcc00;
-}
-
-
-footer{
-
- text-align: center;
-  padding: 15px;
-  background:blue /*#004d40*/;
-  color: #fff;
-  margin-top: 20px;
-
-}
-
-
-</style>
-
-
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -177,49 +5,50 @@ footer{
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery | MADARASATUL-TA'ALIMUL QURAN WAS-SUNNAH</title>
   <style>
-    /* ==== BODY BACKGROUND ==== */
+    /* ===== BASE STYLES ===== */
     body.demo {
-      /* background-image: url('OVERVIEW.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; */
-
-background-color: #ffcc00;
-
+      background-color: #ffcc00;
       margin: 0;
       font-family: Arial, sans-serif;
     }
 
-    /* ==== NAVIGATION BAR ==== */
+    /* ===== NAVBAR ===== */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #004d40;
-      padding: 15px 30px;
+      padding: 15px 20px;
+      flex-wrap: wrap;
     }
 
     .navbar .logo {
       color: #fff;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
+      flex: 1 1 100%;
+      text-align: center;
     }
 
     .navbar ul {
       list-style: none;
       display: flex;
-      margin: 0;
       padding: 0;
+      margin: 10px 0 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     .navbar ul li {
-      margin-left: 20px;
+      margin: 5px 10px;
     }
 
     .navbar ul li a {
       text-decoration: none;
       color: #fff;
       font-weight: bold;
+      font-size: 14px;
     }
 
     .navbar ul li a.active,
@@ -227,73 +56,121 @@ background-color: #ffcc00;
       color: #ffcc00;
     }
 
-    /* ==== PAGE TITLE ==== */
+    /* ===== PAGE TITLE ===== */
     h2 {
       color: #fff;
       text-align: center;
       background-color: #004d40;
       padding: 10px;
       margin: 0;
+      font-size: 20px;
     }
 
-    /* ==== GALLERY GRID ==== */
+    /* ===== GALLERY GRID ===== */
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
       padding: 20px;
     }
 
-
- /* .rrr {
-      background: #fff;
-      border-radius: 10px;
-      padding: 5px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-
-width: 40%;
-height: 50%;
-    } */
-
-
     .gallery-grid img {
       width: 100%;
-      height: 250px;
+      height: 200px;
       object-fit: cover;
-      border: 5px solid white;
+      border: 4px solid white;
       border-radius: 10px;
     }
 
-    /* Highlighted images */
     .gallery-grid img.yyy,
     .gallery-grid img.zzz {
       border-color: #004d40;
     }
 
-    /* ==== FOOTER ==== */
+    /* ===== FOOTER ===== */
     footer {
       text-align: center;
       padding: 15px;
       background-color: #004d40;
       color: #fff;
-      margin-top: 20px;
+      font-size: 14px;
     }
 
-    /* ==== RESPONSIVE ==== */
-    @media screen and (max-width: 768px) {
+    /* ===== VIDEO SECTION ===== */
+    h1 {
+      text-align: center;
+      color: #004d40;
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-width: 480px;
+      border: 4px solid #004d40;
+      border-radius: 10px;
+    }
+
+    /* ===== RESPONSIVE BREAKPOINTS ===== */
+    @media (max-width: 768px) {
+      .navbar .logo {
+        font-size: 18px;
+      }
+
+      .navbar ul li a {
+        font-size: 13px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .gallery-grid img {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
       .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 10px 15px;
+      }
+
+      .navbar .logo {
+        font-size: 16px;
       }
 
       .navbar ul {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
       }
 
       .navbar ul li {
-        margin: 10px 0;
+        margin: 8px 0;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      .gallery-grid img {
+        height: 160px;
       }
     }
   </style>
@@ -315,7 +192,7 @@ height: 50%;
     </nav>
   </header>
 
-  <!-- ===== GALLERY CONTENT ===== -->
+  <!-- ===== GALLERY SECTION ===== -->
   <section class="content">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -330,48 +207,33 @@ height: 50%;
       <img src="IMG_20250729_170340_057.jpg" alt="Outdoor view" />
       <img class="zzz" src="OVERVIEW.jpg" alt="School overview" />
 
-
-<img src="IMG_1021.JPG" alt="Classroom 5" />
-<img src="IMG_1023.JPG" alt="Classroom 5" />
-<img src="IMG_1028.JPG" alt="Classroom 5" />
-<img src="IMG_1033.JPG" alt="Classroom 5" />
-<img src="IMG_1034.JPG" alt="Classroom 5" />
-<img src="IMG_1035.JPG" alt="Classroom 5" />
-<img src="IMG_20250729_170322_670.jpg" alt="Classroom 5" />
-<img src="IMG_20250729_170322_814.jpg" alt="Classroom 5" />
-<img src="IMG_20250729_170334_410.jpg" alt="Classroom 5" />
-<img src="IMG_20250729_170335_017.jpg" alt="Classroom 5" />
-<img src="IMG_1034.JPG" alt="Classroom 5" />
-<img src="IMG_20250729_170340_057.jpg" alt="Classroom 5" />
-
-
-
-
+      <!-- More images -->
+      <img src="IMG_1021.JPG" alt="Extra photo" />
+      <img src="IMG_1023.JPG" alt="Extra photo" />
+      <img src="IMG_1028.JPG" alt="Extra photo" />
+      <img src="IMG_1033.JPG" alt="Extra photo" />
+      <img src="IMG_1034.JPG" alt="Extra photo" />
+      <img src="IMG_1035.JPG" alt="Extra photo" />
+      <img src="IMG_20250729_170322_814.jpg" alt="Extra photo" />
+      <img src="IMG_20250729_170334_410.jpg" alt="Extra photo" />
+      <img src="IMG_20250729_170335_017.jpg" alt="Extra photo" />
     </div>
 
+    <!-- ===== VIDEO SECTION ===== -->
+    <h1>VIDEOS</h1>
+    <div class="video-container">
+      <video controls>
+        <source src="AD09606C-6757-464B-B5EE-8AA0A94935A5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-<h1>VIDEOS</h1>
-
-<!-- <DIV class="rrr">
-
-<video controls>
-          <source src="AD09606C-6757-464B-B5EE-8AA0A94935A5.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video> -->
-
-
-
-
-</DIV>
-
-
-
+      <!-- Add more <video> tags here if needed -->
+    </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; 2025 MADARASATUL-TA'ALIMUL QURAN WAS-SUNNAH | All Rights Reserved</p>
   </footer>
-
 </body>
 </html>
