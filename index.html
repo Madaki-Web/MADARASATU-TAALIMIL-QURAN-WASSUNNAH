@@ -1,250 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MADARASATUL-TA'ALIMIL QURAN WAS-SUNNAH</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* General Styling */
-    body {
-      font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
-      background-color: #f7f7f7;
-      margin: 0;
-      padding: 0;
-    }
+@media (max-width: 768px) {
+  /* Stack navbar items vertically */
+  .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
 
+  .navbar ul li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
 
+  .navbar ul li a {
+    display: block;
+    padding: 10px;
+  }
 
-    
-    h1, h2, h3, h4 {
-      color: #000000;
-    }
+  /* Logo image responsive */
+  .header .logo {
+    width: 100px;
+    height: 100px;
+  }
 
-    /* Header Section */
-    .header {
-      background-color: darkorange;
-      color: #000;
-      text-align: center;
-      padding: 40px 20px;
-    }
+  /* Hero section */
+  .intro h2 {
+    font-size: 26px;
+  }
 
-    .header .logo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: #ee8c0c 10px solid;
-      margin: 0 auto 20px;
-    }
+  .intro p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
 
-    .navbar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(42, 5, 250);
-      padding: 15px 30px;
-      margin: 0;
-    }
+  /* Views layout stack */
+  .view-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
+  .view {
+    width: 90%;
+  }
 
-    .navbar ul li {
-      margin-left: 20px;
-      background-color: #ee8c0c;
-      border-radius: 10px;
-      padding: 10px 20px;
-    }
+  /* Video responsiveness */
+  .video-section video {
+    width: 100%;
+    height: auto;
+  }
 
-    .navbar ul li a {
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-    }
+  /* Footer navbar stack */
+  footer .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .navbar ul li:hover {
-      background-color: #ffcc00;
-      color: #fff;
-    }
+  footer .navbar ul li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
 
-    /* Hero Section */
-    .intro {
-      text-align: center;
-      background-color: #e0f2f1;
-      padding: 50px 20px;
-    }
-
-    .intro h2 {
-      font-size: 36px;
-    }
-
-    .intro p {
-      font-size: 18px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* Views Section */
-    .views {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .view-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-
-    .view {
-      flex: 1;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 280px;
-    }
-
-    .view img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    /* Video Section */
-    .video-section {
-      background-color: #0e1077;
-      padding: 40px;
-      text-align: center;
-      border-radius: 15px;
-      margin: 20px 0;
-    }
-
-    .video-section video {
-      width: 80%;
-      max-width: 600px;
-      height: 200px;
-      border: 3px solid lightsalmon;
-      border-radius: 10px;
-    }
-
-    /* Footer Section */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #df7d0d;
-      color: #fff;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .view-container {
-        flex-direction: column;
-        gap: 30px;
-      }
-
-      .navbar ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .navbar ul li {
-        margin-bottom: 10px;
-      }
-
-      .intro h2 {
-        font-size: 30px;
-      }
-
-      .intro p {
-        font-size: 16px;
-      }
-
-      .video-section video {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header Section -->
-  <header class="header">
-    <img src="LOGO.jpg" alt="Islamiyya Logo" class="logo">
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ISLAMIYYA.HTML">Introductory Page</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="scholars.html">Scholars</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="mission.html">Mission & Vision</a></li>
-        <li><a href="learn with us.html">Learn With Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Body Section -->
-  <section class="intro">
-    <h2>Welcome to MADARASATU-TA'ALIMIL QURAN WAS-SUNNAH</h2>
-    <p>We provide quality Islamic education and holistic development to students of all ages.</p>
-  </section>
-
-  <!-- Inner and Outer Views -->
-  <section class="views">
-    <h3>Our Islamiyya Views</h3>
-    <div class="view-container">
-      <div class="view">
-        <h4>Inner View</h4>
-        <img src="INNERVIEW.jpg" alt="Inner View">
-      </div>
-      <div class="view">
-        <h4>Outer View</h4>
-        <img src="OVERVIEW.jpg" alt="Outer View">
-      </div>
-    </div>
-  </section>
-
-  <!-- Video Section -->
-  <section class="video-section">
-    <h3>Our Islamiyya in Action</h3>
-    <video controls>
-      <source src="ISLAMIYYA 1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <p>&copy; 2025  Madarasatu-Ta’alimil-Qur’an-was-Sunnah | All Rights Reserved</p>
-    <p>Contact Us: <a href="mailto:madarasatutaalimilquranwasunna@gmail.com">madarasatutaalimilquranwasunna@gmail.com</a></p>
-
- <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ISLAMIYYA.HTML">Introductory Page</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="scholars.html">Scholars</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="mission.html">Mission & Vision</a></li>
-        <li><a href="learn with us.html">Learn With Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-
-  </footer>
-
-</body>
-</html>
-
-
+  footer .navbar ul li a {
+    padding: 8px;
+  }
+}
