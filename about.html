@@ -1,164 +1,167 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  background: #f0f4f4;
-  color: #333;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: #004d40;
-  padding: 15px 20px;
-}
-
-.logo {
-  color: #fff;
-  font-size: 18px;
-  flex: 1 1 100%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.nav-links li a.active,
-.nav-links li a:hover {
-  color: #ffcc00;
-}
-
-/* Content */
-.content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content h2 {
-  font-size: 28px;
-  color: #004d40;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.content h3 {
-  font-size: 22px;
-  color: #00796b;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-.btn {
-  display: inline-block;
-  background: #004d40;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 10px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #ffcc00;
-  color: #004d40;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #004d40;
-  color: #fff;
-  margin-top: 40px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo {
-    font-size: 16px;
-  }
-
-  .content {
-    margin: 20px 10px;
-    padding: 15px;
-  }
-
-  .content h2 {
-    font-size: 22px;
-  }
-
-  .content h3 {
-    font-size: 18px;
-  }
-
-  .content p {
-    font-size: 14px;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* Shared image & video responsiveness */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  margin: 15px 0;
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | MADARASATUL-TA'ALIMUL QURAN WAS-SUNNAH</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f0f4f4;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: #004d40;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 20px;
+      flex: 1 1 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Content Section */
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 28px;
+      color: #004d40;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .content h3 {
+      font-size: 22px;
+      color: #00796b;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #004d40;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+      color: #004d40;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #004d40;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .content {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+
+      .content h2 {
+        font-size: 22px;
+      }
+
+      .content h3 {
+        font-size: 18px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Make images and videos responsive */
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -177,14 +180,14 @@ img, video {
     </nav>
   </header>
 
-  <!-- Content -->
+  <!-- Main Content -->
   <section class="content">
     <h2>About Our Islamiyya</h2>
     <p>
-      Madarasatul-Ta'alimul Quran Was-Sunnah is an esteemed Islamic educational institute dedicated to providing high quality education rooted in the principles of Quran and Sunnah. Our mission is to nurture a love of learning, spiritual growth, and moral character in our students.
+      Madarasatul-Ta'alimul Quran Was-Sunnah is an esteemed Islamic educational institute dedicated to providing high quality education rooted in the principles of Quran and Sunnah.
     </p>
     <p>
-      Founded to provide Islamic knowledge and Qur’anic education to students of all ages, we have nurtured students who are now contributing positively to society.
+      Our mission is to nurture a love of learning, spiritual growth, and moral character in our students. Founded to provide Islamic knowledge and Qur’anic education to students of all ages, we have nurtured students who are now contributing positively to society.
     </p>
     <h3>Progress & Needs</h3>
     <p>
